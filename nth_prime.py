@@ -15,6 +15,8 @@ def is_prime(x):
 
 def prime(n):
     primes = [2]
+    if n < 0:
+        return print("Negative numbers can't be prime!")
     for i in range(3, 1000000):
         if is_prime(i) == True:
             primes.append(i)
